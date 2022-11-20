@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #d3ba91;
+}
+.Loading {
+  color: rgb(19, 74, 228);
+}
+
+.Wait {
+  color: rgb(221, 201, 18);
+}
+/* .veille {
+  display: flex
+} */
+.Come {
+  color: #19b919;
+  animation: clignote 2s linear infinite;
+}
+
+@keyframes clignote {
+  50% {
+    opacity: 0;
+  }
+}
+
+.Truck {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Media {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.NavBarre {
+  box-shadow: 1px 1px 5px #c1c2c3;
+}
+
+.Inputtruck {
+  background-color: #6c757d;
+  height: 30%;
+  border: none;
+  color: #c1c2c3;
+}
+
+.LoginMargin {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.Timer {
+  width: 10%;
+  display: inline;
+}
+
+.FullScreenSave {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.Column {
+  margin: 20px;
+  box-shadow: 1px 1px 5px #c1c2c3;
+  background: #f4eeeb;
+  border-radius: 15px;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.ButtonUp {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: none;
+}
+
+.ModeChoice {
+  color: black;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.characters {
+  list-style: none;
+  padding-left: 0;
+}
+
+.characters p {
+  max-width: none;
+  font-weight: bold;
+  margin: 0;
+}
+
+.characters-thumb {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 2em;
+  height: 2em;
+  background-color: #e8e8e8;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+.characters-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.Board {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.header {
+  background-color: #2e170f;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.title {
+  color: white;
+}
+
+.headerContainer {
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: #3a0707;
+}
+
+
+.buttonHeader {
+  color: #3a0707;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.navbar-custom {
+  background-color: lightgreen;
+}
+.Media {
+  margin-top: 15px;
+}
+
+.tabMedia {
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #e8e2df;
+  border: none;
+}
+
+.buttonActive {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  box-shadow: none;
+}
+
+.Logout {
+  padding-left: 7px;
+  padding-right: 9px;
+}
+.margin50 {
+  margin-right: 50px;
+}
+
+.login {
+  background-color: #e8e2df;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  margin-top: 10%;
+  box-shadow: 1px 1px 1px #939699;
+}
