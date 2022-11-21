@@ -15,7 +15,7 @@ function MultiScreen({ ModeChoice, changeMode }) {
 
   const dragItem = useRef();
   const dragOverItem = useRef();
-  const URL_API = "http://localhost:4000";
+  const URL_API = "http://192.168.100.75:4000";
   useEffect(() => {
     getFile();
     // eslint-disable-next-line react-hooks/exhaustive-deps

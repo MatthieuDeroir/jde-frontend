@@ -1,7 +1,7 @@
 import axios from "axios";
-const URL_API = "http://localhost:4000";
+const URL_API = "http://192.168.100.75:4000";
 class AuthService {
-    //get files 
+  //get files 
   get() {
     const data = {};
     return axios.get(URL_API + "/files", JSON.stringify(data));
@@ -16,20 +16,20 @@ class AuthService {
     });
   }
   //delete file 
-  delete(file){
+  delete(file) {
     axios.delete(URL_API + "/file/" + file._id).then((res) => {
-        console.log(res);
-        console.log(res.data);
-      });
-  }
-  //post file 
-  post(file){
-    axios
-    .post(URL_API + "/files", file)
-    .then((res) => {
       console.log(res);
       console.log(res.data);
     });
+  }
+  //post file 
+  post(file) {
+    axios
+      .post(URL_API + "/files", file)
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+      });
   }
 }
 

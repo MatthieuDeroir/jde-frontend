@@ -8,7 +8,7 @@ import fileService from "../../../../../services/fileService";
 import uploadService from "../../../../../services/uploadService";
 import "../../../../../styles/App.css";
 function Normale({ ModeChoice, changeMode }) {
-  const URL_API = "http://localhost:4000";
+  const URL_API = "http://192.168.100.75:4000";
   var [State, setState] = useImmer([]);
 
   useEffect(() => {
@@ -72,7 +72,7 @@ function Normale({ ModeChoice, changeMode }) {
                   onDragEnter={(e) => dragEnter(e, index)}
                   onDragEnd={drop} */
                   key={file._id}
-                  /* draggable */
+                /* draggable */
                 >
                   <td>{file.fileName}</td>
 

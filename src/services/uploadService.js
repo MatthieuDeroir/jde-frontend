@@ -1,11 +1,11 @@
 import axios from "axios";
-const URL_API = "http://localhost:4000";
+const URL_API = "http://192.168.100.75:4000";
 class UploadService {
   delete(file) {
     return axios.post(URL_API + "/delete", {
-        fileName: file.fileName,
-        format: file.format,
-      }).then((res) => {
+      fileName: file.fileName,
+      format: file.format,
+    }).then((res) => {
       console.log(res);
       console.log(res.data);
     });
