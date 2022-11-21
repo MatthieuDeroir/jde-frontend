@@ -14,7 +14,7 @@ import logo from "../assets/Logo_JDE.png";
 import axios from "axios";
 
 function Header({ token }) {
-  const URL_API = "http://192.168.1.42:4000";
+  const URL_API = "http://192.168.100.75:4000";
   function logOut() {
     axios
       .put(URL_API + "/mode/6368fc0a41898f80900da97b", {
