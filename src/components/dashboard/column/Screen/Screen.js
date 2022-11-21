@@ -8,7 +8,7 @@ import { useImmer } from "use-immer";
 
 function Screen() {
   var [State, setState] = useImmer([]);
-  const URL_API = "http://localhost:4000";
+  const URL_API = "http://192.168.100.75:4000";
   useEffect(() => {
     getVeille();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -52,18 +52,18 @@ function Screen() {
         });
     });
   }
-  async function switchOff(){
-      await axios
+  async function switchOff() {
+    await axios
       .put(URL_API + "/mode/6368fc0a41898f80900da97b", {
         activeMode: 0
       })
       .then((result) => {
         console.log(result.data);
       });
-      window.location.reload();
-    }
+    window.location.reload();
+  }
 
-  
+
 
   return (
     <div className="Truck">
