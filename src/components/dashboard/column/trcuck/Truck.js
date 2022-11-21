@@ -17,7 +17,7 @@ import Wait from "./State/Wait";
 ></link>;
 
 function Truck() {
-  const URL_API = "http://localhost:4000";
+  const URL_API = "http://192.168.100.75:4000";
 
   useEffect(() => {
     waitLoading();
@@ -57,16 +57,16 @@ function Truck() {
       dock.dockIndex = e.target.value;
     });
   }
-  async function DeleteNextTruck(docks){
-    
+  async function DeleteNextTruck(docks) {
+
     setLoadingTruck((draft) => {
-        const dock = draft.find((dock) => dock._id === docks._id);
-        dock.dockIndex = 0;
-        dock.plate = "";
-        dock.state = true;
-        postTruck(dock)
-      });
-    
+      const dock = draft.find((dock) => dock._id === docks._id);
+      dock.dockIndex = 0;
+      dock.plate = "";
+      dock.state = true;
+      postTruck(dock)
+    });
+
   }
 
   //Move next vers loading
